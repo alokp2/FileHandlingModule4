@@ -14,6 +14,7 @@ print(f.read())
 #Write a Python program to append text to a file and display the text. 
 #open and append to file
 f= open("myfile.txt","a")
+f.write("Python")
 f.close()
 
 '''Write a Python program to read first n lines of a file. 
