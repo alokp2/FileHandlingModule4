@@ -21,5 +21,11 @@ f.close()
 
 '''
 
+#open and read the file
+f = open("myfile.txt", "r")
+#using readline() to get the entire line.
 
+print(f.readline())
+
+f.close()
 
