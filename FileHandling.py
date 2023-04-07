@@ -29,3 +29,31 @@ print(f.readline())
 
 f.close()
 
+class Rectangle:
+   
+    #create constructor
+    def __init__(self,length,width):
+        self.length=length
+        self.width=width
+    
+    #create a method for calculating area
+    def calculateRectangle(self):
+        print(self.length*self.width)
+    
+
+
+obj=Rectangle()
+obj.calculateRectangle()
+print(obj)
+
+
+
+
+
+
+
+
+
+
+
+
