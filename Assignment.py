@@ -38,19 +38,25 @@ with open('myfile.txt') as myfile3:
         print(li)
 myfile3.close()
 # #Write a python program to find the longest words. 
+#open the file and read
 f5=open("myfile.txt","r")
 print(f5.readline())
+#create a function to find longest word
 def findlongword(word):
     wordlist=[]
     maxlength=0
     for words in word:
+        #loop through each word in file 
+        #condition statement
+        #check if length of words > maxlength if so set maxlength to words length
         if len(words)>maxlength:
             maxlength=len(words)
+            #if length is equal to max length then add the words to the empty list and return it at the end.
         elif len(words)==maxlength:
             wordlist.append(words)
     return wordlist
-wordlist=findlongword(f5)
-print("The longest word is:",wordlist)
+w=findlongword(f5)
+print("The longest word is:",w)
 
  #Write a Python program to copy the contents of a file to another file
  #first part of the code is to read the myfile and store the code to the second file(file2)
@@ -271,27 +277,3 @@ Instantiation: The creation of an instance of a class.
 '''
 isinstance() function
 '''
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-        
-
-
-
-
-
-
-
-
-
